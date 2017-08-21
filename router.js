@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express()
+const app = express()
 
 // 获取专辑内容
 app.use('/album', require('./router/album'))
@@ -225,4 +225,4 @@ app.use('/user/subcount', require('./router/user_subcount'))
 app.use("/user/record", require("./router/user_playrecord"))
 
 
-module.exorts = router;
+module.exorts = app;
